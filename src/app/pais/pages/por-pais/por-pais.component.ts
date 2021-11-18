@@ -23,12 +23,15 @@ export class PorPaisComponent  {
 
     this.paisService.buscarPais(this.termino)
       .subscribe((paises) => {
-        console.log(paises);
         this.paises = paises;
       }, (err) => {
         this.hayError = true;
         this.paises   = [];
       });
+  }
+
+  sugerencias(termino: string) {
+    this.hayError = false;
   }
 
 }
