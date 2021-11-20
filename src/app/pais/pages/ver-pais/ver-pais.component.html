@@ -17,6 +17,9 @@
         <h3>Información</h3>
         <ul class="list-group">
             <li class="list-group-item">
+              <strong>Capital</strong> {{ pais.capital }}
+            </li>
+            <li class="list-group-item">
                 <strong>Población</strong> {{ pais.population | number }}
             </li>
             <li class="list-group-item">
@@ -43,9 +46,9 @@
         <span class="badge bg-primary mr-1">{{ pais.translations.fa }}</span>
     </div>
 </div>
-<!-- <pre class="mt-5">
+<pre class="mt-5">
     {{ pais | json }}
-</pre> -->
+</pre>
 </ng-template>
 
 
